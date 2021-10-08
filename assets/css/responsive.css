@@ -1,0 +1,107 @@
+#header .menu {
+    position: absolute;
+    top: 0; right: 0;
+    padding: 0 20px;
+    display: none;
+}
+
+#header .menu:hover {
+    background-color: #ccc;
+}
+
+#header .menu:hover .search-icon{
+    color: black;
+}
+
+#slider .description,
+#slider .heading {
+    /* fix chữ dễ nhìn */
+    text-shadow: 0 0 2px black;
+}
+
+.contact-text {
+    line-height: 2;
+}
+/* tại thẻ phone và mail thêm thẻ a trước sđt và mail
+href="tel:sđt","mailto:mail" */
+.contact-text a {
+    color: blue;
+}
+
+.contact-text a:hover {
+    opacity: 0.8;
+}
+/* mobile */
+@media (max-width: 46.1875em) {
+    /* overflow là ẩn đi các thẻ con ngoài phạm vi thẻ cha */
+    #header {
+        overflow: hidden;
+    }
+    #header .search {
+        display: none;
+    }
+    #header .menu {
+        display: block;
+    }
+    #nav {
+        /* ko kế thừa hết chiều ngang tìm inline block thành block */
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+    #nav > li:first-child {
+        /* riêng con đầu thì ko ăn theo */
+        display: inline-block;
+    }
+    #nav .subnav {
+        /* reset về position mặc định */
+        position: initial;
+        background-color: #333;
+    }
+    #nav .subnav a {
+        color: white;
+        padding: 0 42px;
+    }
+    #content .member {
+        width: 100%;
+    }
+    #content .avt {
+        width: 60%;
+    }
+    .place {
+        width: 100%;
+    }
+    /* fix nút buy,send dễ bấm */
+    .place-buy {
+        width: 100%;
+        text-align: center;
+        -webkit-appearance: none; /* fix lỗi trên safari */
+    }
+    /* đi nước đôi margin-top cả div của
+    member-list giảm 32px,place-list giảm 16px
+    thêm member tăng 32px,place 16px tự động cách giữa các khoảng*/
+    .contact-text,
+    .contact-input,
+    .contact-input .info {
+        width: 100%;
+    }
+    .contact-text {
+        text-align: center;
+        margin: 0 auto 16px;
+    }
+    .contact-input .info {
+        margin-top: 8px;
+    }
+}
+/* tablet and mobile */
+@media (max-width: 63.9375em) {
+    #footer .social-list a {
+        font-size: 48px;
+        margin: 0 8px;
+    }
+    #footer .copyright {
+        font-size: 42px;
+        margin-top: 16px;
+    }
+}
