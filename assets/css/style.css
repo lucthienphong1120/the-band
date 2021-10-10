@@ -347,21 +347,21 @@ padding giữa các ảnh 8x2 và margin -8 ở 2 lề */
     text-decoration: none;
 }
 
-#footer .ti-twitter:hover {
-    color: deepskyblue;
-}
-
 #footer .ti-facebook:hover,
 #footer .ti-linkedin:hover {
     color: blue;
 }
 
-#footer .ti-instagram:hover {
-    color: orangered;
+#footer .ti-sharethis:hover {
+    color: deepskyblue;
+}
+
+#footer .ti-github:hover {
+    color: #0d1117;
 }
 
 #footer .ti-youtube:hover,
-#footer .ti-pinterest:hover {
+#footer .ti-google:hover {
     color: red;
 }
 
