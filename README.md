@@ -1,3 +1,3 @@
 # the-band
 
-powered by me
+a little exercise I learned from f8
